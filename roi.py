@@ -1,5 +1,3 @@
-
-
 intial_amount = float(input("Enter the initial amount: "))
 interest_rate = float(input("Enter the interest rate: "))
 years = int(input("Enter the number of years: "))
