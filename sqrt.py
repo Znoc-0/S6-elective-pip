@@ -1,8 +1,13 @@
-from math import sqrt
+num = float(input("Enter a number: "))
 
-n = float(input("Enter a number: "))
-if n < 0:
-    print("Invalid number")
-else:
-     print(f"The square root of the number is {sqrt(n)}")
-
+if num < 0:
+        print("Enter a positive number")
+else:  
+    estimate = num / 2.0
+    precision = 0.0000001
+    while True:
+        final = (estimate + num / estimate) / 2.0
+        if abs(estimate - final) < precision:
+           print(final)
+           break
+        estimate = final
